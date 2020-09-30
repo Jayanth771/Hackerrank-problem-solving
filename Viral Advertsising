@@ -1,13 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,k = 5,q= 0;
+    int n,i=0,p,q= 0;
+    int k=5;
     scanf("%d",&n);
-    int p = k/2;
-    for(i = 0;i<n;i++)
+    p = k/2;
+    while(i<n)
     {
         q += p;
         p = p*3/2;
+        i++;
     }
     printf("%d",q);
 }
